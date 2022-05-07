@@ -3,7 +3,7 @@ This repository replicates a method of velocity analysis, but we do not provide 
 Cite: Ferreira R S, Oliveira D A B, Semin D G, et al. Automatic velocity analysis using a hybrid regression approach with convolutional neural networks[J]. IEEE Transactions on Geoscience and Remote Sensing, 2020, 59(5): 4464-4470.
 
 ## Data preparation
-You need prepara two segy(sgy) files which conclude velocity spectra and CMP gather infomation, and a label file which conclude the velocity labels.
+You need prepara two segy(sgy) files which includes velocity spectra and CMP gather infomation, and a label file which includes the velocity labels.
 
 ## Implement
 There are three parts for implementing the method proposed by Ferreira et al.: 
