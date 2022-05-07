@@ -6,13 +6,14 @@ Cite: Ferreira R S, Oliveira D A B, Semin D G, et al. Automatic velocity analysi
 You need prepara two segy(sgy) files which conclude velocity spectra and CMP gather infomation, and a label file which conclude the velocity labels.
 
 ## Implement
-There are three parts for implementing the method proposed by Ferreira et. al: 
+There are three parts for implementing the method proposed by Ferreira et al.: 
 1) Generate the CropNMO dataset for training Xception Network. 
 2) Training Xception Network. 
 3) Predict processing
 
 Tips:
-You have to change a few path settings, if you want to test these method on your datasets.
+1. You have to change a few path settings, if you want to test these method on your datasets.
+2. You have to build the h5 file for the index of samples, as shown in https://github.com/newbee-ML/MIFN-Velocity-Picking/blob/master/utils/BuiltStkDataSet.py
 
 ### Generate the CropNMO dataset for training Xception Network
 ```cmd
