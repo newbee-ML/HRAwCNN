@@ -14,7 +14,7 @@ ParaDict = {'DataSet': ['str', ['hade', 'dq8']],
             'lrStart': ['float', [0.001, 0.0001]],
             'optimizer': ['str', ['adam', 'sgd']]}
 
-start = 1
+start = 10
 
 #################################
 # training

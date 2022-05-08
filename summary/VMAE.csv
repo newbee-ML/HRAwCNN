@@ -1,0 +1,9 @@
+,Unnamed: 0,EpName,DataSetRoot,OutputPath,ReTrain,DataSet,SeedRate,StopMax,GPUNO,MaxIter,SaveIter,MsgIter,lrStart,optimizer,PretrainModel,trainBS,valBS,valNum,VMAE
+0,0,Ep-1,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,hade,1.0,50,0,20000,50,10,0.001,adam,,16,32,10000,225.2926
+1,0,Ep-2,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,hade,1.0,50,0,20000,50,10,0.0001,adam,,16,32,10000,190.65442
+2,0,Ep-3,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,hade,1.0,50,0,20000,50,10,0.001,adam,,32,32,10000,191.1893
+3,0,Ep-4,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,hade,1.0,50,0,20000,50,10,0.0001,adam,,32,32,10000,173.52364
+4,0,Ep-5,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,dq8,1.0,50,0,20000,50,10,0.001,adam,,16,32,10000,1042.1289
+5,0,Ep-6,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,dq8,1.0,50,0,20000,50,10,0.0001,adam,,16,32,10000,887.01227
+6,0,Ep-7,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,dq8,1.0,50,0,20000,50,10,0.001,adam,,32,32,10000,823.63684
+7,0,Ep-8,P:\Spectrum\CropNMOData,F:\VelocityPicking\HRAwCNN\Xception,1,dq8,1.0,50,0,20000,50,10,0.0001,adam,,32,32,10000,778.9616

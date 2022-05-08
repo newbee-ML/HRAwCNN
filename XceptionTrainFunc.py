@@ -26,6 +26,7 @@ from model.Xception import xception
 from utils.LoadData import CropNMOLoad
 from utils.logger import MyLog
 warnings.filterwarnings("ignore")
+from utils.PlotTools import PLotMultiTensor
 
 
 """
@@ -195,8 +196,8 @@ def train(opt):
             Feats, DiffVel, _ = next(diter)
         optimizer.zero_grad()
         out = net(Feats)
-        # print(out[0], DiffVel[0])
-        # PLotMultiTensor(Feats[0])
+        print(out[0], DiffVel[0])
+        PLotMultiTensor(Feats[0])
         
         out = out.squeeze()
         # compute loss

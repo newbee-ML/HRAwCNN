@@ -31,3 +31,17 @@ python XceptionTrainMain.py
 ```cmd
 python HRAwCNNPredMain.py
 ```
+
+## Test Results on two field datasets
+
+
+| **DataSet** 	| **lrStart** 	| **optimizer** 	| **trainBS** 	|   **VMAE**   	|
+|:-----------:	|:-----------:	|:-------------:	|:-----------:	|:------------:	|
+|   **hade**  	|  **0.0001** 	|    **adam**   	|    **32**   	| **173.5236** 	|
+|   **hade**  	|    0.0001   	|      adam     	|      16     	|   190.6544   	|
+|   **hade**  	|    0.001    	|      adam     	|      32     	|   191.1893   	|
+|   **hade**  	|    0.001    	|      adam     	|      16     	|   225.2926   	|
+|   **dq8**   	|  **0.0001** 	|    **adam**   	|    **32**   	| **778.9616** 	|
+|   **dq8**   	|    0.001    	|      adam     	|      32     	|   823.6368   	|
+|   **dq8**   	|    0.0001   	|      adam     	|      16     	|   887.0123   	|
+|   **dq8**   	|    0.001    	|      adam     	|      16     	|   1042.129   	|

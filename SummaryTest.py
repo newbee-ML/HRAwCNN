@@ -17,6 +17,7 @@ def SummaryResult(root, SavePath=None):
         ResultList.append(ParaValues+[np.mean(VMAEList[:, 1].astype(np.float32))])
     ColName = list(ParaCsv.keys()) + ['VMAE']
     ResultDF = pd.DataFrame(ResultList, columns=ColName)
+    if not os.path.exists('summary'): os.makedirs('summary')
     if SavePath is None:
         SavePath = 'summary\\VMAE.csv'
     ResultDF.to_csv(SavePath)

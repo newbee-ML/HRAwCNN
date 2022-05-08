@@ -107,7 +107,8 @@ def PredFunc(opt):
             # load basic axis infomation
             t0Int, tInt = ds.t0Int, ds.tInt
             vInt, oInt = InfoDict['vInt'], InfoDict['oInt']
-            MaxtInt = int(len(t0Int)*(t0Int[1]-t0Int[0])/(tInt[1]-tInt[0]))
+            t0d, td = t0Int[1]-t0Int[0], tInt[1]-tInt[0]
+            MaxtInt = int(len(t0Int)*t0d/td)
             # crop center index
             CroptIndex = np.arange(int(CropSize[0]/2+1), MaxtInt-int(CropSize[0]/2)-2, opt.stride)
             ################################
@@ -115,9 +116,9 @@ def PredFunc(opt):
             ################################
             InitVel = InitialVelocity(PwrImg)
             InitVel = InitVel*(vInt[1]-vInt[0]) + vInt[0]
-            Cropt0Index = (CroptIndex*(tInt[1]-tInt[0])/(t0Int[1]-t0Int[0])).astype(np.int32)
+            Cropt0Index = (CroptIndex*td/t0d).astype(np.int32)
             CroptIndex = CroptIndex.astype(np.int32)
-            CropCenterVel = {CroptIndex[ind]: [InitVel[Cropt0Index[ind]]] for ind in range(len(CroptIndex))}
+            CropCenterVel = {CroptIndex[ind]*td: [InitVel[Cropt0Index[ind]]] for ind in range(len(CroptIndex))}
             ################################
             # Tuned velocity picking
             ################################
