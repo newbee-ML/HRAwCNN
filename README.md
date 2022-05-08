@@ -24,6 +24,10 @@ python GenerateCNNData.py --dataset dq8 --CropSize 256,256
 ```cmd
 python XceptionTrainMain.py
 ```
+Training details:
+- Velocity range [1000, 7000]
+- NMO correction interval 50m/s, range [-1000, 1000]
+- The shape of input NMO image is (256, 256)
 
 
 ### Predict processing
@@ -31,6 +35,10 @@ python XceptionTrainMain.py
 ```cmd
 python HRAwCNNPredMain.py
 ```
+Prediction details:
+- The shape of input NMO image is (256, 256)
+- Time stride is 100 pixel
+
 
 ## Test Results on two field datasets
 
